@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.e339f0ed.css",
-    "main.js": "/static/js/main.e58b0366.js",
-    "static/media/me.jpg": "/static/media/me.6c983995a2bc8c028a7d.jpg",
+    "main.css": "/static/css/main.c9b361c3.css",
+    "main.js": "/static/js/main.828545a1.js",
     "static/media/protege.jpg": "/static/media/protege.a64839ec6f8a8d4926b8.jpg",
     "static/media/gtc2.jpg": "/static/media/gtc2.ea63b367d9703dd29796.jpg",
+    "static/media/me.jpg": "/static/media/me.dc26b07473580ac24c0e.jpg",
     "static/media/k8swall.jpg": "/static/media/k8swall.7e3668ca281eea25349e.jpg",
     "static/media/k8s.png": "/static/media/k8s.6131519efc8f6ee68552.png",
     "static/media/cicd.jpeg": "/static/media/cicd.4d9aea38853c3e0cdd43.jpeg",
     "static/media/py.png": "/static/media/py.ebddd128d5f6b9659464.png",
     "static/media/docker.jpg": "/static/media/docker.fad79b876a9152a21c56.jpg",
+    "static/media/awstf.jpg": "/static/media/awstf.0a70389205b137aa247f.jpg",
     "static/media/apache.jpg": "/static/media/apache.28b045b4e6392f29bfa6.jpg",
     "static/media/git.jpeg": "/static/media/git.f39e7783d67e4c87e237.jpeg",
-    "static/media/keras.png": "/static/media/keras.10a0bb6cf6d050268f39.png",
-    "static/media/tf.png": "/static/media/tf.a46e8bae031509770b3f.png",
     "static/media/medistat.jpg": "/static/media/medistat.2702c9d6f1f20316e061.jpg",
     "static/media/jenkins.jpg": "/static/media/jenkins.922756165b73560ee6e4.jpg",
     "static/media/pyqt.png": "/static/media/pyqt.7bb45953dc2aa5eca986.png",
     "static/media/android.jpg": "/static/media/android.5f354cac1ff7bd75bc29.jpg",
+    "static/media/aws.svg": "/static/media/aws.dd9277c987f598698ebb.svg",
     "index.html": "/index.html",
-    "main.e339f0ed.css.map": "/static/css/main.e339f0ed.css.map",
-    "main.e58b0366.js.map": "/static/js/main.e58b0366.js.map"
+    "static/media/terraform.svg": "/static/media/terraform.0913e3eedb1ff8262f98.svg",
+    "main.c9b361c3.css.map": "/static/css/main.c9b361c3.css.map",
+    "main.828545a1.js.map": "/static/js/main.828545a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e339f0ed.css",
-    "static/js/main.e58b0366.js"
+    "static/css/main.c9b361c3.css",
+    "static/js/main.828545a1.js"
   ]
 }
