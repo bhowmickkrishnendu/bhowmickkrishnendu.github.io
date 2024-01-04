@@ -24,7 +24,7 @@ const Intro = () => {
             </div>
             <div className="text">
                 <p id="name">Krishnendu <strong>Bhowmick</strong></p>
-                <p className="title">Executive IT Professional</p>
+                <p className="title">AWS DevOps Professional</p>
 
                 <p>  A logical and creative thinker, I love solving problems. <br />   
                     Devops practitioner, <br />Site reliability and application support engineer.</p>

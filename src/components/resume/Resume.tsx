@@ -5,40 +5,46 @@ import './resume.css';
 
 const Resume = () => {
 
-  const [educaton, setEducation] = useState([
-    {
-      dates: "Batch of 2014",
-      title: "BCA, Information Technology",
-      subtitle: "PTU, Kolkata",
-      description: "Percentage: 74%"
-    },
-    {
-      dates: "Batch of 2011",
-      title: "Grade XII",
-      subtitle: "Chaipat High School, West Medinipur, West Bengal",
-      description: "Percentage: 52%"
-    },
-    {
-      dates: "Batch of 2009",
-      title: "Grade X",
-      subtitle: "Chaipat High School, West Medinipur, West Bengal",
-      description: "Percentage: 60%"
-    },
-  ]);
+  // const [educaton, setEducation] = useState([
+  //   {
+  //     dates: "Batch of 1947",
+  //     title: "Tech, Information Technology",
+  //     subtitle: "College, Kolkata",
+  //     description: "Percentage: 74%"
+  //   },
+  //   {
+  //     dates: "Batch of 1947",
+  //     title: "Grade XII",
+  //     subtitle: "High School, West Medinipur, West Bengal",
+  //     description: "Percentage: 52%"
+  //   },
+  //   {
+  //     dates: "Batch of 1947",
+  //     title: "Grade X",
+  //     subtitle: "High School, West Medinipur, West Bengal",
+  //     description: "Percentage: 60%"
+  //   },
+  // ]);
 
 
   const [experience, setExperience] = useState([
       {
-        dates: "August 2016 – Current",
+      dates: "August 2023 – Current",
+      title: "AWS DevOps Engineer",
+      subtitle: "HashCash Consultants - Kolkata",
+      description: '☑Architected and maintained AWS cloud components (EC2, S3, VPCs, IAM).\n\n☑Optimized resource allocation, cost efficiency, and security.\n\n☑Automated infrastructure with Terraform, managed services like EKS, ECS, SNS, Route 53, Autoscaling and CloudWatch.\n\n☑Automate infrastructure provisioning and configuration using (IaC) tools Terraform.\n\n☑Designed, deployed, and managed Kubernetes clusters for containerized apps.\n\n☑Implemented best practices for containerization, resource utilization, and security.\n\n☑Troubleshot and resolved Kubernetes and Docker-related issues.\n\n☑Developed CI/CD pipelines using Git, Jenkins, and relevant tools.\n\n☑Automated application builds, testing, and deployment processes.\n\n☑Collaborated with development teams for code integration, version control, and release management.\n\n☑Configured Nexus for artifact and dependency storage.\n\n☑Set up prometheus, grafana monitoring dashboards, alerts, and reports.\n\n☑Proactively identified and resolved performance bottlenecks, conducted root cause analysis.\n\n☑Designed solutions for DevOps, Cloud, Virtualization, and Storage technologies.'
+      },
+      {
+        dates: "August 2016 – August 2023",
         title: "Executive – Information Technology (Application and Infra Support)",
         subtitle: "Landmark Group - Kolkata, Chennai & Bangalore",
-        description: "Oracle Retail POS, Other Oracle application support.\nMonitoring and resolving data and log file issue.\nManage network, servers, desktop and technology tools.\nMonitor performance and maintain systems according to requirements.\nTroubleshoot issues and outages.\nUpgrade systems with new releases and models.\nDevelop expertise to train staff on new technologies.\nSetting up the new build environment for various applications in Windows/Linux environment.\nExpertise in Installation, Configuration, Administration and Maintenance of Oracle Retail POS Application.\nAbility to trouble shoot build and deployment issues.\nInvolved in Bare Metal Restore.\nAttending the calls, meetings with the end users to ensure smooth project / task delivery.\nMonitor patch release and provide proactive support to resolve any application issues.\nInvolved in Performance Optimization.\nInvolved in Disaster Recovery and High Availability.\nInvolved in the documentation of all the process and procedures.\nPerformed weekly and monthly health checks of application.\nWorked with scripting language like Shell Scripting, and Batch.\nBuild an internal wiki with technical documentation, manuals and IT policies.\nExperience on Ticketing Tools."
+        description: "☑ Deployed and supported Apache Tomcat, Oracle Retail POS, Oracle BI, and Middleware applications.\n\n☑ Managed network, cloud, and bare-metal servers for efficient business operation.\n\n☑ Monitored and reported infrastructure and application issues, troubleshooting outages and improving performance.\n\n☑ Upgraded systems with new releases, developed expertise to train staff on emerging technologies.\n\n☑ Set up new build environments for applications in Windows/Linux, troubleshooted deployment issues.\n\n☑ Architected, provisioned, and maintained cloud infrastructure components for disaster recovery and high availability.\n\n☑ Collaborated with end-users for project/task delivery, maintaining process documentation.\n\n☑ Worked with scripting language like Shell Scripting, and Batch.\n\n☑ Experience on Ticketing Tools."
       },
       {
         dates: "February 2015 – April 2016",
         title: "System Administrator",
         subtitle: "Webbings - Kolkata",
-        description: 'Involved in deployment of the application using Tomcat.\nVerify that application are working properly\nMonitor server and desktop performance\nCreate & maintain environment & tools to automate build/release activities.\nInstall, update patch and application.\nMonitor network communication\nSetup security policies for users\nDocumentation in form of internal wiki\nManage Batch File and task scheduler\nMonitor Server and desktop performance\nOutlook Troubleshooting\nExperience on Ticketing Tools.'
+        description: '☑Deployed applications using Tomcat, ensuring proper functionality.\n\n☑Verified and monitored server/desktop performance.\n\n☑Automated build/release activities by creating and maintaining environments/tools.\n\n☑Installed, updated patches, and applications, monitored network communication.\n\n☑Implemented security policies, documented processes in an internal wiki.\n\n☑Managed batch files, task scheduler, and performed Outlook troubleshooting.\n\n☑Utilized Ticketing Tools for effective issue tracking and resolution.'
       },
     ]);
   
@@ -125,10 +131,10 @@ const Resume = () => {
           <Card cardInfo={experience}/>
         </div>
 
-        <div className="col">
+        {/* <div className="col">
           <h1>Education</h1>
           <Card cardInfo={educaton}/>
-        </div>
+        </div> */}
         
         <div className="col">
           <h1>Achievements</h1>
@@ -140,6 +146,7 @@ const Resume = () => {
           <Card cardInfo={community}/>
         </div>
         
+
       </div>
 
     )

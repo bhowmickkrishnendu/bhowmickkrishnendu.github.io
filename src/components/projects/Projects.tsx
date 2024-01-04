@@ -5,6 +5,18 @@ const Projects = () => {
 
     const projects = [
         {
+            link: "https://github.com/bhowmickkrishnendu/AWS-With-Terraform",
+                // background: "awstf.jpg",
+            background: "bg6",
+            category: "Infrastructure Automation",
+            title: "AWS with Terraform",
+            subtitle: "AWS-With-Terraform is a collection of Terraform modules and code examples for managing infrastructure on Amazon Web Services (AWS).",
+            tech:[
+                "aws.svg",
+                "terraform.svg"]
+        },
+
+        {
             link: "https://github.com/bhowmickkrishnendu/apache-docker-demo",
                 // background: "cicd.jpeg",
             background: "bg4",

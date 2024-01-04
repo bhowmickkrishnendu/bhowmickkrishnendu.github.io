@@ -24,7 +24,7 @@ const About = () => {
             <p className="heading sec">About <strong>Me</strong></p>
         </div>
         <div className="col-grid">
-            <div className="col">
+            <div className="col1">
                 <div data-aos="fade-left" data-aos-duration="1500" className="boxed card">
                     <p>
                         <span className="about-intro">
@@ -34,17 +34,17 @@ const About = () => {
                         </span>
                         <br />
 
-                        I have an inclination towards Devops, site reliability and application support engineering, 
-                        my strength is my ability to adapt & learn quickly as 
-                        software version changes are significantly different. <br />
-                        <br />
-                        
-                        Described as a “Executive – Application Support” with special focus in server and desktops, 
-                        Oracle application support, Ubuntu and Office 365. Over 7 years of experience performing various 
-                        role from application support to the server include management, documentation, maintenance of IT resource, 
-                        system analysis, installation, migration, configuration, troubleshooting, helpdesk ticketing etc.
-                        <br />
-                        <br />
+                        Meet the tech virtuoso who seamlessly transitioned from Executive – Application Support to a dynamic DevOps Engineer, shaping the future of software delivery.
+                        <br /><br />
+                        With over 8 years of expertise, I once orchestrated the support dance for Oracle applications and server management. Now, I'm the maestro of Kubernetes, Docker, and AWS, crafting efficient and reliable cloud solutions.
+                        <br /><br />
+                        In the AWS realm, I architect and optimize, using Terraform's alchemy to automate infrastructure. As a DevOps virtuoso, I orchestrate harmonious code integration through Git, Jenkins, and more.
+                        <br /><br />
+                        Beyond the orchestration, I'm a vigilant guardian of performance, utilizing Nexus for artifact storage and proactive identification of bottlenecks. In the vast landscape of technologies, I bring not just aptitude but a relentless curiosity for solving operational challenges.
+                        <br /><br />
+                        Embark on a journey where every line of code is a stroke of art, and every deployment is a masterpiece in the making. Join me in the symphony of technology, where efficiency meets elegance.
+
+                        <br /><br />
                         I also enjoy collaborating and look forward to fun and productive social engagements on the way.
                         <br />
                         <br />
