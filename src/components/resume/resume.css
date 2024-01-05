@@ -22,11 +22,10 @@ ul {
     margin: 8px 12px;
     box-shadow: .3rem .3rem .5rem #e2e3e5, -.2rem -.2rem .5rem #f3f4f5;
     border-radius: 25px;
-    margin-bottom: 25px;
 }
 
 .date{
-    color:#000000;
+    color:#bdbaba;
     display: inline-block;
     text-transform: uppercase;
     font-size: 0.75rem;
@@ -62,10 +61,10 @@ ul {
     white-space: pre-wrap;
     text-align: left;
     margin: 7px 0px;
-    font-weight: 400;
-    line-height: 1.45;
-    font-size: 14px;
-    color: #0e0e0e;
+    font-weight: 300;
+    line-height: 1.35;
+    font-size: 16px;
+    color: #777;
 }
   
   
