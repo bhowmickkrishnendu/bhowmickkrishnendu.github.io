@@ -22,6 +22,7 @@ ul {
     margin: 8px 12px;
     box-shadow: .3rem .3rem .5rem #e2e3e5, -.2rem -.2rem .5rem #f3f4f5;
     border-radius: 25px;
+    margin-bottom: 30px;
 }
 
 .date{
