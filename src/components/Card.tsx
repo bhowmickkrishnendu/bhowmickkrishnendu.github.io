@@ -24,7 +24,7 @@ const Card: React.FC<IProps> = ({ cardInfo }) => {
     <div>
     {card.description == ''
       ? <a className="card_desc1 inactive" ></a>
-      : <a className="card_desc1 " href={card.description}>Hall of Fame</a>
+      : <a className="card_desc1 " href={card.description} target="_blank" rel="noopener noreferrer">Hall of Fame</a>
     }
   </div> 
                         </div>
