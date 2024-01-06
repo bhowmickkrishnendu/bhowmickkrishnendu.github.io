@@ -66,6 +66,17 @@ ul {
     font-size: 13.4px;
     color: #0e0e0e;
 }
+
+.card_desc1{
+    white-space: pre-wrap;
+    text-align: center;
+    margin: 7px 0px;
+    font-weight: 400;
+    line-height: 1.30;
+    font-size: 13.4px;
+    color: #0e0e0e;
+    text-decoration: none;
+}
   
   
 

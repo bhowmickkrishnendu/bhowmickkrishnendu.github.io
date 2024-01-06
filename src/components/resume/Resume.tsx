@@ -1,30 +1,11 @@
 import {useState} from 'react';
 import Card from "../Card";
+import CardExp from "../CardExp";
+
 import './resume.css';
 
 
 const Resume = () => {
-
-  // const [educaton, setEducation] = useState([
-  //   {
-  //     dates: "Batch of 1947",
-  //     title: "Tech, Information Technology",
-  //     subtitle: "College, Kolkata",
-  //     description: "Percentage: 74%"
-  //   },
-  //   {
-  //     dates: "Batch of 1947",
-  //     title: "Grade XII",
-  //     subtitle: "High School, West Medinipur, West Bengal",
-  //     description: "Percentage: 52%"
-  //   },
-  //   {
-  //     dates: "Batch of 1947",
-  //     title: "Grade X",
-  //     subtitle: "High School, West Medinipur, West Bengal",
-  //     description: "Percentage: 60%"
-  //   },
-  // ]);
 
 
   const [experience, setExperience] = useState([
@@ -55,61 +36,61 @@ const Resume = () => {
         dates: "June, 2021",
         title: "2 x Hall of Fame from United Nations",
         subtitle: "Reported XSS vulnerability on unesco.org",
-        description: "Hall of fame on https://unite.un.org/content/hall-fame/list"
+        description: "https://unite.un.org/content/hall-fame/list"
       },
       {
         dates: "June, 2021",
         title: "2 x Hall of Fame from European Union",
         subtitle: "Cross scripting vulnerability reported on europa.eu",
-        description: "Hall of fame on https://cert.europa.eu/hall-of-fame"
+        description: "https://cert.europa.eu/hall-of-fame"
       },
       {
         dates: "January, 2021",
         title: "Hall of Fame from United Nations",
         subtitle: "Reported a XSS vulnerability on unodc.org",
-        description: "Hall of fame on https://unite.un.org/content/hall-fame/list"
+        description: "https://unite.un.org/content/hall-fame/list"
       },
       {
         dates: "January, 2021",
         title: "Hall of Fame from European Union",
         subtitle: "Site misconfiguration issue was reported on europa.eu",
-        description: "Hall of fame on https://cert.europa.eu/hall-of-fame"
+        description: "https://cert.europa.eu/hall-of-fame"
       },
       {
         dates: "2019",
         title: "Hall of Fame from Treebo Hotels",
         subtitle: "Site misconfiguration issue was reported on treebo.com",
-        description: "Hall of fame on https://www.treebo.com/security/"
+        description: "https://www.treebo.com/security/"
       },
       {
         dates: "2019",
         title: "Hall of Fame from Nokia",
         subtitle: "Cross scripting vulnerability reported on nokia.com",
-        description: "Hall of fame on https://www.nokia.com/notices/responsible-disclosure/"
+        description: "https://www.nokia.com/notices/responsible-disclosure/"
       },
       {
         dates: "2016",
         title: "Hall of Fame from Inflectra.com",
         subtitle: "Site misconfiguration issue was reported on Inflectra.com",
-        description: "Hall of fame on https://www.inflectra.com/company/responsible-disclosure.aspx"
+        description: "https://www.inflectra.com/company/responsible-disclosure.aspx"
       },
       {
         dates: "2016",
         title: "Acknowledgement from VMware",
         subtitle:"Site misconfiguration issue was reported on VMware.com",
-        description: "VMware workstation subscription and VMware goodies given as a token of appreciation."
+        description: ""
       },
       {
         dates: "2016",
         title: "Acknowledgement from Eset Antivirus",
         subtitle: "Cross scripting vulnerability reported on eset.com",
-        description: "A thank you note and Eset subscription given as a token of appreciation."
+        description: ""
       },
       {
         dates: "2016",
         title: "Hall of Fame from Microsoft",
         subtitle: "Cross scripting vulnerability reported on microsoft.com",
-        description: "Hall fame on  https://www.microsoft.com/en-us/msrc/researcher-acknowledgments-online-services-archive?rtc=1"        
+        description: "https://www.microsoft.com/en-us/msrc/researcher-acknowledgments-online-services-archive?rtc=1"        
       },
     ]);
 
@@ -128,24 +109,22 @@ const Resume = () => {
         
         <div className="col">
           <h1>Experience</h1>
-          <Card cardInfo={experience}/>
+          <CardExp cardInfo={experience}/>
         </div>
-
-        {/* <div className="col">
-          <h1>Education</h1>
-          <Card cardInfo={educaton}/>
-        </div> */}
         
         <div className="col">
           <h1>Achievements</h1>
           <Card cardInfo={achievements}/>
+
+          <h1>Community Work</h1>
+          <CardExp cardInfo={community}/>
         </div>
 
-        <div className="col">
+        {/* <div className="col">
           <h1>Community Work</h1>
-          <Card cardInfo={community}/>
+          <CardExp cardInfo={community}/>
         </div>
-        
+         */}
 
       </div>
 

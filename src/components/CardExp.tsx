@@ -9,7 +9,7 @@ interface IProps {
     }[]
 }
 
-const Card: React.FC<IProps> = ({ cardInfo }) => {
+const CardExp: React.FC<IProps> = ({ cardInfo }) => {
 
     const renderCardInfo = () : JSX.Element[] =>{
         return cardInfo.map(card => {
@@ -18,16 +18,7 @@ const Card: React.FC<IProps> = ({ cardInfo }) => {
                     <div className="date">{card.dates}</div>
                     <h4 className="card_title">{card.title}</h4>
                     <div className="card_subtitle">{card.subtitle}</div>
-
-                    <div className="card_desc1">
-
-    <div>
-    {card.description == ''
-      ? <a className="card_desc1 inactive" ></a>
-      : <a className="card_desc1 " href={card.description}>Hall of Fame</a>
-    }
-  </div> 
-                        </div>
+                    <div className="card_desc">{card.description}</div>
                 </li>
             )
         })
@@ -38,4 +29,4 @@ const Card: React.FC<IProps> = ({ cardInfo }) => {
     )
 }
 
-export default Card
+export default CardExp
