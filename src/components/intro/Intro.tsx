@@ -17,7 +17,7 @@ const Intro = () => {
         <div className="intro">
             <div className="circle">
                 <span className="circle__btn">
-                    <img src={pfp} alt="Nits" />
+                    <img src={pfp} alt="Krishnendu Bhowmick" />
                 </span>
                 <span className="circle__back-1"></span>
                 <span className="circle__back-2"></span>
