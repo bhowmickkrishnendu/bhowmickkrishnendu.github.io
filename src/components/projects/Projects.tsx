@@ -22,7 +22,7 @@ const Projects = () => {
             background: "bg4",
             category: "CICD Pipeline Project",
             title: "Apache Server CICD Pipeline",
-            subtitle: "Using Github hook jenkins pull the data. Integrated docker will compile the dockerfile and ssh agent push the docker image to registry. SSH agent execute kubernetes command on k8s master node to make application live.",
+            subtitle: "Automate CI/CD pipeline with Jenkins GitHub webhook triggering Docker build, image push to registry, and Kubernetes deployment for application activation.",
             tech:[
                 "git.jpeg",
                 "apache.jpg",
