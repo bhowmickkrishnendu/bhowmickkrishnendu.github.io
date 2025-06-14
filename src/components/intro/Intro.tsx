@@ -24,17 +24,17 @@ const Intro = () => {
             </div>
             <div className="text">
                 <p id="name">Krishnendu <strong>Bhowmick</strong></p>
-                <p className="title">AWS DevOps Professional</p>
+                <p className="title">🚀 <strong>Seasoned </strong>DevOps Engineer | Automation Specialist</p>
 
-                <p>  A logical and creative thinker, I love solving problems. <br />   
-                    Devops practitioner, <br />Site reliability and application support engineer.</p>
+                <p>Complex systems simplified through thoughtful automation and resilient design. <br></br>   
+                Creativity in architecture. Precision in execution.</p>
                     
                 
                 <div className="socials">
                     <hr></hr>
                     
                     <div data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
-                        <a href="https://github.com/bhowmickkrishnendu" target="_blank" title="Github">
+                        <a href="https://github.com/bhowmickkrishnendu" target="_blank" rel="noopener noreferrer" title="Github">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                                 <path className="fill" d="M17 13.5c0 4.142-2.502 4-6.645 4-4.142 0-8.355.142-8.355-4S7.858 7 12 7s5 2.358 5 6.5z"></path>
                                 <path d="M12 16.5v-2.902a2.53 2.53 0 00-.705-1.958c2.355-.263 4.83-1.155 4.83-5.25A4.08 4.08 0 0015 3.578 3.803 3.803 0 0014.932.75S14.047.487 12 1.86a10.035 10.035 0 00-5.25 0C4.702.487 3.817.75 3.817.75a3.803 3.803 0 00-.067 2.827 4.08 4.08 0 00-1.125 2.835c0 4.065 2.475 4.958 4.83 5.25a2.528 2.528 0 00-.705 1.935V16.5m0-2.25C3 15.375 3 12.375 1.5 12l5.25 2.25z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -42,7 +42,7 @@ const Intro = () => {
                         </a>
                     </div>
                     <div data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1300">
-                        <a href="https://www.linkedin.com/in/iamkrishnendu/" title="Linkedin">
+                        <a href="https://www.linkedin.com/in/iamkrishnendu/" target="_blank" rel="noopener noreferrer" title="Linkedin">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                                 <path className="fill" d="M17 14.5c0 4.142-2.502 4-6.645 4-4.142 0-8.355.142-8.355-4S7.858 8 12 8s5 2.358 5 6.5z"></path>
                                 <path d="M12 6a4.5 4.5 0 014.5 4.5v5.25h-3V10.5a1.5 1.5 0 10-3 0v5.25h-3V10.5A4.5 4.5 0 0112 6v0zM4.5 6.75h-3v9h3v-9zM3 4.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -50,7 +50,7 @@ const Intro = () => {
                         </a>
                         </div>
                     <div data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1600">
-                        <a href="https://twitter.com/whokrishnendu/" target="_blank" title="Twitter">
+                        <a href="https://twitter.com/whokrishnendu/" target="_blank" rel="noopener noreferrer" title="Twitter">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                                 <path className="fill" d="M17 13.5c0 4.142-2.502 4-6.645 4-4.142 0-8.355.142-8.355-4S7.858 7 12 7s5 2.358 5 6.5z"></path>
                                 <path d="M17.25 2.25a8.174 8.174 0 01-2.355 1.147A3.36 3.36 0 009 5.647v.75A7.995 7.995 0 012.25 3s-3 6.75 3.75 9.75a8.73 8.73 0 01-5.25 1.5c6.75 3.75 15 0 15-8.625 0-.209-.02-.417-.06-.622a5.79 5.79 0 001.56-2.753v0z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -58,7 +58,7 @@ const Intro = () => {
                         </a>
                     </div>
                     <div data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1900">
-                        <a href="mailto:krish.mailinfo@gmail.com" target="_blank" title="Email">
+                        <a href="mailto:krish.mailinfo@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                                 <path className="fill" d="M17 13.5c0 4.142-2.502 4-6.645 4-4.142 0-8.355.142-8.355-4S7.858 7 12 7s5 2.358 5 6.5z"></path>
                                 <path d="M3 3h12c.825 0 1.5.675 1.5 1.5v9c0 .825-.675 1.5-1.5 1.5H3c-.825 0-1.5-.675-1.5-1.5v-9C1.5 3.675 2.175 3 3 3z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>

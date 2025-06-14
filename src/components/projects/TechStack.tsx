@@ -11,7 +11,8 @@ function TechStack ({urls}: IProps) {
             {
                 urls.map(function(val) {
                     const img = require(`./techstack/${val}`);
-                    return <img className="tech" src={img} />
+                    const altText = val.split('.')[0];
+                    return <img className="tech" src={img} alt={altText} />
                 })
             }
         </div>

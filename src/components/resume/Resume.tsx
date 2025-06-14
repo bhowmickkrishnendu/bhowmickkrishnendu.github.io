@@ -8,30 +8,81 @@ import './resume.css';
 const Resume = () => {
 
 
-  const [experience, setExperience] = useState([
+  const [experience] = useState([
+    {
+      dates: "December 2024 – Current",
+      title: "Senior DevOps Engineer - II",
+      subtitle: "Nomura Research Institute - Kolkata",
+      description: [
+        "Architected and deployed secure, scalable infrastructure on AWS and OCI for high-availability systems.",
+        "Automated infrastructure and cloud operations, reducing manual tasks and optimizing hosting costs.",
+        "Enhanced CI/CD pipelines using Jenkins and GitLab CI in Agile-based product environments.",
+        "Implemented Infrastructure as Code (IaC) with Terraform for version-controlled and repeatable deployments.",
+        "Delivered end-to-end cloud-native solutions with containerized microservices on Amazon EKS.",
+        "Transformed business requirements into DevOps workflows through stakeholder collaboration.",
+        "Developed automation scripts using Python, Ansible, and AWS Lambda to boost operational efficiency.",
+        "Provided production support and incident resolution to ensure system reliability and uptime.",
+        "Managed DevOps toolchain lifecycle, including upgrades, integrations, and security compliance.",
+        "Achieved near-total automation of build/deploy workflows using CI/CD best practices and cloud-native tools."
+      ]
+            
+},
       {
-      dates: "August 2023 – Current",
+      dates: "August 2023 – November 2024",
       title: "AWS DevOps Engineer",
       subtitle: "HashCash Consultants - Kolkata",
-      description: '☑ Architected and maintained AWS cloud components (EC2, S3, VPCs, IAM).\n\n☑ Optimized resource allocation, cost efficiency, and security.\n\n☑ Automated infrastructure with Terraform, managed services like EKS, ECS, SNS, Route 53, Autoscaling and CloudWatch.\n\n☑ Automate infrastructure provisioning and configuration using (IaC) tools Terraform.\n\n☑ Designed, deployed, and managed Kubernetes clusters for containerized apps.\n\n☑ Implemented best practices for containerization, resource utilization, and security.\n\n☑ Troubleshot and resolved Kubernetes and Docker-related issues.\n\n☑ Developed CI/CD pipelines using Git, Jenkins, and relevant tools.\n\n☑ Automated application builds, testing, and deployment processes.\n\n☑ Collaborated with development teams for code integration, version control, and release management.\n\n☑ Configured Nexus for artifact and dependency storage.\n\n☑ Set up prometheus, grafana monitoring dashboards, alerts, and reports.\n\n☑ Proactively identified and resolved performance bottlenecks, conducted root cause analysis.\n\n☑ Designed solutions for DevOps, Cloud, Virtualization, and Storage technologies.'
+      description: [
+        "Architected and maintained AWS cloud components (EC2, S3, VPCs, IAM).",
+        "Optimized resource allocation, cost efficiency, and security.",
+        "Automated infrastructure with Terraform, managed services like EKS, ECS, SNS, Route 53, Autoscaling and CloudWatch.",
+        "Automated infrastructure provisioning and configuration using Infrastructure as Code (IaC) tools like Terraform.",
+        "Designed, deployed, and managed Kubernetes clusters for containerized apps.",
+        "Implemented best practices for containerization, resource utilization, and security.",
+        "Troubleshot and resolved Kubernetes and Docker-related issues.",
+        "Developed CI/CD pipelines using Git, Jenkins, and relevant tools.",
+        "Automated application builds, testing, and deployment processes.",
+        "Collaborated with development teams for code integration, version control, and release management.",
+        "Configured Nexus for artifact and dependency storage.",
+        "Set up Prometheus, Grafana monitoring dashboards, alerts, and reports.",
+        "Proactively identified and resolved performance bottlenecks, conducted root cause analysis.",
+        "Designed solutions for DevOps, Cloud, Virtualization, and Storage technologies."
+      ]      
       },
       {
         dates: "August 2016 – August 2023",
         title: "Executive – Information Technology (Application and Infra Support)",
         subtitle: "Landmark Group - Kolkata, Chennai & Bangalore",
-        description: "☑ Deployed and supported Apache Tomcat, Oracle Retail POS, Oracle BI, and Middleware applications.\n\n☑ Managed network, cloud, and bare-metal servers for efficient business operation.\n\n☑ Monitored and reported infrastructure and application issues, troubleshooting outages and improving performance.\n\n☑ Upgraded systems with new releases, developed expertise to train staff on emerging technologies.\n\n☑ Set up new build environments for applications in Windows/Linux, troubleshooted deployment issues.\n\n☑ Architected, provisioned, and maintained cloud infrastructure components for disaster recovery and high availability.\n\n☑ Collaborated with end-users for project/task delivery, maintaining process documentation.\n\n☑ Worked with scripting language like Shell Scripting, and Batch.\n\n☑ Experience on Ticketing Tools."
+        description: [
+          "Deployed and supported Apache Tomcat, Oracle Retail POS, Oracle BI, and Middleware applications.",
+          "Managed network, cloud, and bare-metal servers for efficient business operation.",
+          "Monitored and reported infrastructure and application issues, troubleshooting outages and improving performance.",
+          "Upgraded systems with new releases, developed expertise to train staff on emerging technologies.",
+          "Set up new build environments for applications in Windows/Linux, troubleshooted deployment issues.",
+          "Architected, provisioned, and maintained cloud infrastructure components for disaster recovery and high availability.",
+          "Collaborated with end-users for project/task delivery, maintaining process documentation.",
+          "Worked with scripting languages like Shell Scripting and Batch.",
+          "Experience with Ticketing Tools."
+        ]        
       },
       {
         dates: "February 2015 – April 2016",
         title: "System Administrator",
         subtitle: "Webbings - Kolkata",
-        description: '☑ Deployed applications using Tomcat, ensuring proper functionality.\n\n☑ Verified and monitored server/desktop performance.\n\n☑ Automated build/release activities by creating and maintaining environments/tools.\n\n☑ Installed, updated patches, and applications, monitored network communication.\n\n☑ Implemented security policies, documented processes in an internal wiki.\n\n☑ Managed batch files, task scheduler, and performed Outlook troubleshooting.\n\n☑ Utilized Ticketing Tools for effective issue tracking and resolution.'
+        description: [
+          "Deployed applications using Tomcat, ensuring proper functionality.",
+          "Verified and monitored server/desktop performance.",
+          "Automated build/release activities by creating and maintaining environments/tools.",
+          "Installed, updated patches, and applications, monitored network communication.",
+          "Implemented security policies, documented processes in an internal wiki.",
+          "Managed batch files, task scheduler, and performed Outlook troubleshooting.",
+          "Utilized Ticketing Tools for effective issue tracking and resolution."
+        ]        
       },
     ]);
   
     
   
-    const [achievements, setAchievements] = useState([
+    const [achievements] = useState([
       {
         dates: "June, 2021",
         title: "2 x Hall of Fame from United Nations",
@@ -95,7 +146,7 @@ const Resume = () => {
     ]);
 
 
-    const [community, setCommunity] = useState([
+    const [community] = useState([
       {
         dates: "Founded in 2020",
         title: "Technical Mentor",
