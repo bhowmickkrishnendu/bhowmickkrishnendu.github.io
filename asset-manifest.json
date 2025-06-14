@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd91f365.css",
+    "main.css": "/static/css/main.fe7cfb2c.css",
     "main.js": "/static/js/main.7b062416.js",
     "static/media/protege.jpg": "/static/media/protege.a64839ec6f8a8d4926b8.jpg",
     "static/media/gtc2.jpg": "/static/media/gtc2.ea63b367d9703dd29796.jpg",
@@ -20,11 +20,11 @@
     "static/media/aws.svg": "/static/media/aws.dd9277c987f598698ebb.svg",
     "index.html": "/index.html",
     "static/media/terraform.svg": "/static/media/terraform.0913e3eedb1ff8262f98.svg",
-    "main.cd91f365.css.map": "/static/css/main.cd91f365.css.map",
+    "main.fe7cfb2c.css.map": "/static/css/main.fe7cfb2c.css.map",
     "main.7b062416.js.map": "/static/js/main.7b062416.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd91f365.css",
+    "static/css/main.fe7cfb2c.css",
     "static/js/main.7b062416.js"
   ]
 }
