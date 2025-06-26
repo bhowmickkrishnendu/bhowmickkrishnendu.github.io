@@ -4,6 +4,23 @@ import ProjectCard from './ProjectCard'
 const Projects = () => {
 
     const projects = [
+                {
+            link: "https://github.com/bhowmickkrishnendu/AWS-With-Terraform",
+                // background: "awstf.jpg",
+            background: "bg7",
+            category: "DevOps Automation",
+            title: "React CI/CD DevOps Pipeline",
+            subtitle: "A production grade React app with end-to-end DevOps pipeline using GitHub Actions, SonarQube, Trivy, Docker, Slack and Mail notifications.",
+            tech:[
+                "react.png",
+                "docker.png",
+                "github.png",
+                "sonarqube.png",
+                "slack.png",
+                "email.png",
+                "cicd.png"]
+        },
+
         {
             link: "https://github.com/bhowmickkrishnendu/AWS-With-Terraform",
                 // background: "awstf.jpg",

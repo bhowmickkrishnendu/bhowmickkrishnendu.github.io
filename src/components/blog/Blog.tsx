@@ -12,11 +12,13 @@ type MediumPost = {
 
 const Blog = () => {
   const [posts, setPosts] = useState<MediumPost[]>([]);
-  const [activeTag, setActiveTag] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
+  // const [activeTag, setActiveTag] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
+        setLoading(true);
         const res = await axios.get(
           "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@krishnendubhowmick"
         );
@@ -34,24 +36,41 @@ const Blog = () => {
         setPosts(parsedPosts);
       } catch (error) {
         console.error("Failed to fetch blog posts:", error);
+      } finally {
+        setLoading(false);
       }
     };
     fetchPosts();
   }, []);
 
-  const uniqueTags = Array.from(
-    new Set(posts.flatMap((post) => post.categories || []))
-  );
+  // const uniqueTags = Array.from(
+  //   new Set(posts.flatMap((post) => post.categories || []))
+  // );
 
-  const filteredPosts = activeTag
-    ? posts.filter((post) => post.categories?.includes(activeTag))
-    : posts;
+  // const filteredPosts = activeTag
+  //   ? posts.filter((post) => post.categories?.includes(activeTag))
+  //   : posts;
+
+  const filteredPosts = posts;
+
+  // Loader Component
+  const Loader = () => (
+    <div className="loader-container">
+      <div className="loader">
+        <div className="loader-circle"></div>
+        <div className="loader-circle"></div>
+        <div className="loader-circle"></div>
+      </div>
+      <p className="loader-text">Loading amazing content...</p>
+    </div>
+  );
 
   return (
     <div className="blog-container">
       <h2 className="blog-title">📝 Latest from My Medium</h2>
 
-      {uniqueTags.length > 0 && (
+      {/* Tag Filter - Commented out */}
+      {/* {uniqueTags.length > 0 && (
         <div className="tag-filter">
           <button
             onClick={() => setActiveTag(null)}
@@ -69,43 +88,48 @@ const Blog = () => {
             </button>
           ))}
         </div>
-      )}
+      )} */}
 
-      <ul className="blog-grid">
-        {filteredPosts.map((post, idx) => (
-          <li key={idx} className="blog-card">
-            {post.thumbnail && (
-              <img
-                src={post.thumbnail}
-                alt={post.title}
-                className="blog-thumbnail"
-              />
-            )}
-            <div className="blog-content">
-              <a
-                href={post.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="blog-link"
-              >
-                {post.title}
-              </a>
-              <p className="blog-date">
-                {new Date(post.pubDate).toLocaleDateString()}
-              </p>
-              {post.categories && post.categories.length > 0 && (
-                <div className="blog-tags">
+      {loading ? (
+        <Loader />
+      ) : (
+        <ul className="blog-grid">
+          {filteredPosts.map((post, idx) => (
+            <li key={idx} className="blog-card">
+              {post.thumbnail && (
+                <img
+                  src={post.thumbnail}
+                  alt={post.title}
+                  className="blog-thumbnail"
+                />
+              )}
+              <div className="blog-content">
+                <a
+                  href={post.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="blog-link"
+                >
+                  {post.title}
+                </a>
+                <p className="blog-date">
+                  {new Date(post.pubDate).toLocaleDateString()}
+                </p>
+                {/* Blog tags - Commented out */}
+                {/* {post.categories && post.categories.length > 0 && (
+                  <div className="blog-tags">
                     {post.categories.map((tag, i) => (
-                    <span key={i} className="blog-tag">
+                      <span key={i} className="blog-tag">
                         {tag}
-                    </span>
+                      </span>
                     ))}
-                </div>
-                )}
-            </div>
-          </li>
-        ))}
-      </ul>
+                  </div>
+                )} */}
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
