@@ -2,7 +2,7 @@ import './index.css';
 import { render } from "react-dom";
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route
 } from "react-router-dom";
@@ -16,7 +16,7 @@ import Blog from "./components/blog/Blog";
 
 const rootElement = document.getElementById("root");
 render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path='/' element={ <App /> }>
         <Route path='/' element={ <Intro /> } />
@@ -26,6 +26,6 @@ render(
         <Route path='blog' element={ <Blog /> }/>
       </Route>
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   rootElement
 );
