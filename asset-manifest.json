@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2675e174.css",
-    "main.js": "/static/js/main.7b062416.js",
+    "main.css": "/static/css/main.7910a720.css",
+    "main.js": "/static/js/main.fc8dad65.js",
     "static/media/protege.jpg": "/static/media/protege.a64839ec6f8a8d4926b8.jpg",
     "static/media/gtc2.jpg": "/static/media/gtc2.ea63b367d9703dd29796.jpg",
     "static/media/me.jpg": "/static/media/me.2a3ebdbccee952915352.jpg",
@@ -15,16 +15,17 @@
     "static/media/git.jpeg": "/static/media/git.f39e7783d67e4c87e237.jpeg",
     "static/media/medistat.jpg": "/static/media/medistat.2702c9d6f1f20316e061.jpg",
     "static/media/jenkins.jpg": "/static/media/jenkins.922756165b73560ee6e4.jpg",
+    "static/media/devops.jpg": "/static/media/devops.3d6184b37446709ed598.jpg",
     "static/media/pyqt.png": "/static/media/pyqt.7bb45953dc2aa5eca986.png",
     "static/media/android.jpg": "/static/media/android.5f354cac1ff7bd75bc29.jpg",
     "static/media/aws.svg": "/static/media/aws.dd9277c987f598698ebb.svg",
     "index.html": "/index.html",
     "static/media/terraform.svg": "/static/media/terraform.0913e3eedb1ff8262f98.svg",
-    "main.2675e174.css.map": "/static/css/main.2675e174.css.map",
-    "main.7b062416.js.map": "/static/js/main.7b062416.js.map"
+    "main.7910a720.css.map": "/static/css/main.7910a720.css.map",
+    "main.fc8dad65.js.map": "/static/js/main.fc8dad65.js.map"
   },
   "entrypoints": [
-    "static/css/main.2675e174.css",
-    "static/js/main.7b062416.js"
+    "static/css/main.7910a720.css",
+    "static/js/main.fc8dad65.js"
   ]
 }
