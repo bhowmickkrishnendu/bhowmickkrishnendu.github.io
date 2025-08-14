@@ -141,7 +141,7 @@ const Resume = () => {
         dates: "2016",
         title: "Hall of Fame from Microsoft",
         subtitle: "Cross scripting vulnerability reported on microsoft.com",
-        description: "https://www.microsoft.com/en-us/msrc/researcher-acknowledgments-online-services-archive?rtc=1"        
+        description: "https://msrc.microsoft.com/update-guide/acknowledgement/archive"        
       },
     ]);
 
