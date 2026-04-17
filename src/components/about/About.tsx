@@ -33,7 +33,7 @@ const About = () => {
 
             {/* ── ABOUT ME CARD ── */}
             <div className="about-card-wrapper">
-                <div data-aos="fade-up" data-aos-duration="1500" className="boxed card about-card">
+                <div data-aos="fade-up" data-aos-duration="1500" className="boxed about-card">
                     <p>
                         <span className="about-intro">
                             Turning infrastructure chaos into production excellence,
@@ -52,7 +52,7 @@ const About = () => {
                         <br /><br />
                         <span className="scroll-callout">Scroll a little below to see the daily tech stack I work with.</span>
                         <br /><br />
-                        📍 Kolkata, India &nbsp;|&nbsp; 🌐 Open to remote opportunities and consulting
+                        📍 Kolkata, India | 🌐 Open to remote opportunities and consulting
                     </p>
 
                     <div className="hobbies">
@@ -115,7 +115,7 @@ const About = () => {
                 <div
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    className="boxed card tech-card"
+                    className="boxed tech-card"
                 >
                     <div className="details">
                         <h2 className="tech-heading">🛠️ Tech Arsenal</h2>
@@ -128,7 +128,7 @@ const About = () => {
                             {/* CLOUD */}
                             <div className="tech-category-block">
                                 <h3 className="category">☁️ Cloud Platforms</h3>
-                                <div className="col-grid">
+                                <div className="about-col-grid">
                                     <div className="popped">AWS</div>
                                     <div className="popped">OCI</div>
                                     <div className="popped">Azure</div>
@@ -139,7 +139,7 @@ const About = () => {
                             {/* AWS SERVICES */}
                             {/* <div className="tech-category-block">
                                 <h3 className="category">🌩️ AWS Expertise</h3>
-                                <div className="col-grid">
+                                <div className="about-col-grid">
                                     <div className="popped">EC2 / EKS</div>
                                     <div className="popped">ECS</div>
                                     <div className="popped">S3 / EFS</div>
@@ -152,7 +152,7 @@ const About = () => {
                             {/* Containers */}
                             <div className="tech-category-block">
                                 <h3 className="category">☸️ Containers and Orchestration</h3>
-                                <div className="col-grid">
+                                <div className="about-col-grid">
                                     <div className="popped">Kubernetes</div>
                                     <div className="popped">Docker</div>
                                     <div className="popped">Podman</div>
@@ -164,7 +164,7 @@ const About = () => {
                             {/* IAC */}
                             <div className="tech-category-block">
                                 <h3 className="category">📦 Infrastructure as Code</h3>
-                                <div className="col-grid">
+                                <div className="about-col-grid">
                                     <div className="popped">Terraform</div>
                                     <div className="popped">Ansible</div>
                                     <div className="popped">AWS CDK</div>
@@ -174,7 +174,7 @@ const About = () => {
                             {/* CI/CD */}
                             <div className="tech-category-block">
                                 <h3 className="category">🚀 CI/CD and GitOps</h3>
-                                <div className="col-grid">
+                                <div className="about-col-grid">
                                     <div className="popped">Jenkins</div>
                                     <div className="popped">GitHub Actions</div>
                                     <div className="popped">GitLab CI/CD</div>
@@ -185,7 +185,7 @@ const About = () => {
                             {/* Monitoring */}
                             <div className="tech-category-block">
                                 <h3 className="category">📊 Monitoring and Observability</h3>
-                                <div className="col-grid">
+                                <div className="about-col-grid">
                                     <div className="popped">Prometheus</div>
                                     <div className="popped">Grafana</div>
                                     <div className="popped">ELK Stack</div>
@@ -197,7 +197,7 @@ const About = () => {
                             {/* Programming */}
                             <div className="tech-category-block">
                                 <h3 className="category">💻 Programming and Scripting</h3>
-                                <div className="col-grid">
+                                <div className="about-col-grid">
                                     <div className="popped">Python</div>
                                     <div className="popped">Bash</div>
                                     <div className="popped">YAML</div>
@@ -208,7 +208,7 @@ const About = () => {
                             {/* OS & VCS */}
                             <div className="tech-category-block">
                                 <h3 className="category">🐧 Operating Systems and VCS</h3>
-                                <div className="col-grid">
+                                <div className="about-col-grid">
                                     <div className="popped">Linux</div>
                                     <div className="popped">Git</div>
                                     <div className="popped">GitHub</div>
@@ -220,7 +220,7 @@ const About = () => {
                             {/* Security */}
                             <div className="tech-category-block">
                                 <h3 className="category">🔒 Security and Best Practices</h3>
-                                <div className="col-grid">
+                                <div className="about-col-grid">
                                     <div className="popped">IAM / WAF</div>
                                     <div className="popped">Secrets Management</div>
                                     <div className="popped">Security Scanning</div>
@@ -230,7 +230,7 @@ const About = () => {
                             {/* Databases */}
                             <div className="tech-category-block">
                                 <h3 className="category">🗄️ Databases and Storage</h3>
-                                <div className="col-grid">
+                                <div className="about-col-grid">
                                     <div className="popped">PostgreSQL</div>
                                     <div className="popped">MySQL</div>
                                     <div className="popped">Redis</div>
@@ -241,7 +241,7 @@ const About = () => {
                             {/* Additional Tools */}
                             <div className="tech-category-block">
                                 <h3 className="category">🎯 Additional Tools</h3>
-                                <div className="col-grid">
+                                <div className="about-col-grid">
                                     <div className="popped">Nexus</div>
                                     <div className="popped">Kafka</div>
                                     <div className="popped">Nginx</div>
@@ -256,7 +256,7 @@ const About = () => {
                                 <p className="aiops-note">
                                     As a DevOps engineer stepping into the AI era, these are the tools and concepts I'm actively exploring to bridge infrastructure and intelligent systems.
                                 </p>
-                                <div className="col-grid">
+                                <div className="about-col-grid">
                                     <div className="popped aiops-tag">RAG Systems</div>
                                     <div className="popped aiops-tag">LLM Serving (vLLM / Ollama)</div>
                                     <div className="popped aiops-tag">MLflow</div>
