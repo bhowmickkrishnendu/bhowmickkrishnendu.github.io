@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.64e89063.css",
-    "main.js": "/static/js/main.59012c77.js",
+    "main.css": "/static/css/main.faeb00c6.css",
+    "main.js": "/static/js/main.dc166006.js",
     "static/media/protege.jpg": "/static/media/protege.a64839ec6f8a8d4926b8.jpg",
     "static/media/gtc2.jpg": "/static/media/gtc2.ea63b367d9703dd29796.jpg",
+    "static/media/ai.png": "/static/media/ai.474215f477711ef6b8b8.png",
     "static/media/me.jpg": "/static/media/me.2a3ebdbccee952915352.jpg",
     "static/media/k8swall.jpg": "/static/media/k8swall.7e3668ca281eea25349e.jpg",
     "static/media/k8s.png": "/static/media/k8s.6131519efc8f6ee68552.png",
@@ -16,16 +17,17 @@
     "static/media/medistat.jpg": "/static/media/medistat.2702c9d6f1f20316e061.jpg",
     "static/media/jenkins.jpg": "/static/media/jenkins.922756165b73560ee6e4.jpg",
     "static/media/devops.jpg": "/static/media/devops.3d6184b37446709ed598.jpg",
+    "static/media/gemini.png": "/static/media/gemini.05509233feb57da9851f.png",
     "static/media/pyqt.png": "/static/media/pyqt.7bb45953dc2aa5eca986.png",
     "static/media/android.jpg": "/static/media/android.5f354cac1ff7bd75bc29.jpg",
     "static/media/aws.svg": "/static/media/aws.dd9277c987f598698ebb.svg",
     "index.html": "/index.html",
     "static/media/terraform.svg": "/static/media/terraform.0913e3eedb1ff8262f98.svg",
-    "main.64e89063.css.map": "/static/css/main.64e89063.css.map",
-    "main.59012c77.js.map": "/static/js/main.59012c77.js.map"
+    "main.faeb00c6.css.map": "/static/css/main.faeb00c6.css.map",
+    "main.dc166006.js.map": "/static/js/main.dc166006.js.map"
   },
   "entrypoints": [
-    "static/css/main.64e89063.css",
-    "static/js/main.59012c77.js"
+    "static/css/main.faeb00c6.css",
+    "static/js/main.dc166006.js"
   ]
 }
