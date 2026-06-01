@@ -73,6 +73,9 @@
 #bg7{
     background-image: url("./techstack/devops.jpg");
 }
+#bg8{
+    background-image: url("./techstack/ai.png");
+}
 
 
 
@@ -116,9 +119,10 @@
     font-size: 1.9rem;
     text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
     line-height: 1.2;
-    word-spacing: 100vw;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
+    word-spacing: normal;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    white-space: normal;
     text-align: left;
 }
 .card__subheading {

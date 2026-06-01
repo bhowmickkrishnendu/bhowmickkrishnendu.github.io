@@ -4,8 +4,21 @@ import ProjectCard from './ProjectCard'
 const Projects = () => {
 
     const projects = [
-                {
-            link: "https://github.com/bhowmickkrishnendu/AWS-With-Terraform",
+        {
+            link: "https://github.com/bhowmickkrishnendu/hybrid_ai_assignment_e_commerce_complaint",
+                // background: "awstf.jpg",
+            background: "bg8",
+            category: "AI / ML",
+            title: "Hybrid AI Assistance (E-Commerce Complain)",
+            subtitle: "AI model for an e-commerce company. The company receives huge customer complaints, model task is to predict the complaint escalation risk.",
+            tech:[
+                "py.png",
+                "gemini.png",
+                "docker.png",
+                "tf.png"]
+        },
+        {
+            link: "https://github.com/bhowmickkrishnendu/react-cicd-devops-pipeline",
                 // background: "awstf.jpg",
             background: "bg7",
             category: "DevOps Automation",
