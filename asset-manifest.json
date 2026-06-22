@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6b11844.css",
-    "main.js": "/static/js/main.107edea9.js",
+    "main.css": "/static/css/main.ec1b767c.css",
+    "main.js": "/static/js/main.65883fcb.js",
     "static/media/rag.png": "/static/media/rag.cb61da7b5bcd5b0ec429.png",
     "static/media/protege.jpg": "/static/media/protege.a64839ec6f8a8d4926b8.jpg",
     "static/media/gtc2.jpg": "/static/media/gtc2.ea63b367d9703dd29796.jpg",
@@ -24,11 +24,11 @@
     "static/media/aws.svg": "/static/media/aws.dd9277c987f598698ebb.svg",
     "index.html": "/index.html",
     "static/media/terraform.svg": "/static/media/terraform.0913e3eedb1ff8262f98.svg",
-    "main.a6b11844.css.map": "/static/css/main.a6b11844.css.map",
-    "main.107edea9.js.map": "/static/js/main.107edea9.js.map"
+    "main.ec1b767c.css.map": "/static/css/main.ec1b767c.css.map",
+    "main.65883fcb.js.map": "/static/js/main.65883fcb.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6b11844.css",
-    "static/js/main.107edea9.js"
+    "static/css/main.ec1b767c.css",
+    "static/js/main.65883fcb.js"
   ]
 }
