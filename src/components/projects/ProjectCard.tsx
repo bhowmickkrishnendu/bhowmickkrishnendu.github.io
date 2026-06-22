@@ -22,6 +22,7 @@ const ProjectCard: React.FC<IProps> = ({ info }) => {
                 <a className="proj_card" target="_blank" rel="noopener noreferrer" href={proj.link}>
                     <div className="card__background" id={proj.background}></div>
                     {/* <div className="card__background" style={{backgroundImage: "url(" + proj.background + ")"}}></div> */}
+                    <div className="card__overlay"></div>
                     <div className="card__content">
                         <p className="card__category">{proj.category}</p>
                         <h3 className="card__heading">{proj.title}</h3>
