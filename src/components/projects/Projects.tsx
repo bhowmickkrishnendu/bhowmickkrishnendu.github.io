@@ -5,6 +5,19 @@ const Projects = () => {
 
     const projects = [
         {
+            link: "https://github.com/bhowmickkrishnendu/confluence-knowledge-assistant",
+                // background: "awstf.jpg",
+            background: "bg9",
+            category: "AI / ML",
+            title: "Confluence HybridRAG",
+            subtitle: "Enterprise RAG platform for Confluence with hybrid search, Gemini-powered answers, conversation memory, analytics, and secure authentication.",
+            tech:[
+                "py.png",
+                "gemini.png",
+                "docker.png",
+                "sp.png"]
+        },
+        {
             link: "https://github.com/bhowmickkrishnendu/hybrid_ai_assignment_e_commerce_complaint",
                 // background: "awstf.jpg",
             background: "bg8",
