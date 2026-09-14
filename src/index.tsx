@@ -1,31 +1,21 @@
-import './index.css';
+import "./index.css";
 import { render } from "react-dom";
+import App from "./App";
 
-import {
-  HashRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+// The previous site used hash routes (#/resume, #/projects ...). Everything now
+// lives on one page, so send those old links to the matching section instead of
+// leaving them on a blank hash.
+const LEGACY_ROUTES: Record<string, string> = {
+  "#/": "",
+  "#/resume": "#experience",
+  "#/projects": "#work",
+  "#/about": "#about",
+  "#/blog": "#writing",
+};
 
-import App from './App';
-import Intro from "./components/intro/Intro"
-import Resume from "./components/resume/Resume";
-import Projects from "./components/projects/Projects";
-import About from "./components/about/About";
-import Blog from "./components/blog/Blog";
+const legacy = LEGACY_ROUTES[window.location.hash];
+if (legacy !== undefined) {
+  window.location.replace(window.location.pathname + legacy);
+}
 
-const rootElement = document.getElementById("root");
-render(
-  <HashRouter>
-    <Routes>
-      <Route path='/' element={ <App /> }>
-        <Route path='/' element={ <Intro /> } />
-        <Route path='resume' element={ <Resume /> }/>
-        <Route path='about' element={ <About /> }/>
-        <Route path='projects' element={ <Projects /> }/>
-        <Route path='blog' element={ <Blog /> }/>
-      </Route>
-    </Routes>
-  </HashRouter>,
-  rootElement
-);
+render(<App />, document.getElementById("root"));

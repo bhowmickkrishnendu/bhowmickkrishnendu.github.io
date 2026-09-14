@@ -1,21 +1,54 @@
-// import React, {useState} from 'react';
-// import logo from './logo.svg';
-import './App.css';
-// import Card from "./components/Card"
-import Navbar from './components/menu/Navbar';
-import {Outlet} from 'react-router-dom'
-// import Card from "./components/card"
+import { useEffect } from "react";
+import Nav from "./sections/Nav";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Stack from "./sections/Stack";
+import Work from "./sections/Work";
+import Experience from "./sections/Experience";
+import Recognition from "./sections/Recognition";
+import Writing from "./sections/Writing";
+import Footer from "./sections/Footer";
 
-// experience.map(exp => {
-//   exp.dates
-// })
+// The nav is sticky and wraps to a second line on small screens, so its height
+// is not a constant. Anchor offsets read it from --nav-h rather than guessing.
+function useNavHeight() {
+  useEffect(() => {
+    const nav = document.querySelector<HTMLElement>(".nav");
+    if (!nav) return;
+
+    const apply = () =>
+      document.documentElement.style.setProperty("--nav-h", `${nav.offsetHeight}px`);
+
+    apply();
+
+    const observer = new ResizeObserver(apply);
+    observer.observe(nav);
+    window.addEventListener("resize", apply);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", apply);
+    };
+  }, []);
+}
 
 function App() {
+  useNavHeight();
+
   return (
-    <div className="App">
-      <Navbar />
-      <Outlet />
-    </div>
+    <>
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Stack />
+        <Work />
+        <Experience />
+        <Recognition />
+        <Writing />
+      </main>
+      <Footer />
+    </>
   );
 }
 
