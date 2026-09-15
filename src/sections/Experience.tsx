@@ -3,14 +3,14 @@ import { ROLES } from "../data/content";
 const Experience = () => (
   <section>
     <div className="wrap">
-      <div className="sec-head" id="experience">
+      <div className="sec-head" id="experience" data-step>
         <span className="label">Experience</span>
         <h2>Where the work was done</h2>
       </div>
 
       <div className="roles">
         {ROLES.map((role) => (
-          <article className="role" key={`${role.org}-${role.title}`}>
+          <article className="role" key={`${role.org}-${role.title}`} data-step>
             <div className="role__side">
               <span className="role__date">{role.date}</span>
               <span className="role__org">{role.org}</span>

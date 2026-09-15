@@ -67,7 +67,7 @@ const Writing = () => {
   }, []);
 
   return (
-    <section>
+    <section data-step>
       <div className="wrap">
         <div className="sec-head" id="writing">
           <span className="label">Writing</span>

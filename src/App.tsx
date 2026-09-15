@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import useScrollSteps from "./hooks/useScrollSteps";
 import Nav from "./sections/Nav";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
@@ -34,6 +35,7 @@ function useNavHeight() {
 
 function App() {
   useNavHeight();
+  useScrollSteps();
 
   return (
     <>

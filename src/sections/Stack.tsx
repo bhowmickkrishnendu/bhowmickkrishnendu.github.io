@@ -1,7 +1,7 @@
 import { TIERS } from "../data/content";
 
 const Stack = () => (
-  <section>
+  <section data-step>
     <div className="wrap">
       <div className="sec-head" id="stack">
         <span className="label">Tech arsenal</span>

@@ -3,7 +3,7 @@ import { PROFILE, STATS } from "../data/content";
 import { GithubIcon, LinkedinIcon, MediumIcon, TwitterIcon, MailIcon } from "../components/Icons";
 
 const Hero = () => (
-  <header className="hero" id="top">
+  <header className="hero" id="top" data-step>
     <div className="wrap hero__grid">
       <div className="hero__copy">
         <span className="pill">

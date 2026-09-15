@@ -2,7 +2,7 @@ import { PROFILE } from "../data/content";
 import { GithubIcon, LinkedinIcon, MediumIcon, MailIcon } from "../components/Icons";
 
 const Footer = () => (
-  <footer className="foot">
+  <footer className="foot" data-step>
     <div className="wrap foot__in">
       <div>
         <h2>Let's build something that sleeps through the night</h2>

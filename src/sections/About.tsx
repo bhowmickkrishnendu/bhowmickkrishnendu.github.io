@@ -1,7 +1,7 @@
 import { FACTS, HOBBIES } from "../data/content";
 
 const About = () => (
-  <section className="alt">
+  <section className="alt" data-step>
     <div className="wrap">
       <div className="sec-head" id="about">
         <span className="label">About me</span>

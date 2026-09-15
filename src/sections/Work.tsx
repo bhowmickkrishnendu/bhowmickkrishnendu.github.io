@@ -3,7 +3,7 @@ import { PROJECTS } from "../data/content";
 const asset = (file: string): string => require(`../assets/tech/${file}`);
 
 const Work = () => (
-  <section className="alt">
+  <section className="alt" data-step>
     <div className="wrap">
       <div className="sec-head" id="work">
         <span className="label">Featured projects</span>

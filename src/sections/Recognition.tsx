@@ -15,7 +15,7 @@ const Body = ({ a }: { a: Ack }) => (
 );
 
 const Recognition = () => (
-  <section className="alt">
+  <section className="alt" data-step>
     <div className="wrap">
       <div className="sec-head" id="recognition">
         <span className="label">Hall of fame</span>
