@@ -20,7 +20,28 @@
   --wrap:72rem;
   --r:10px;
   --nav-h:3rem;
+
+  /* Section paddings live here because the step heights below are derived from
+     them; restating a clamp() in two places is how they drift apart. */
+  --pad-sec:clamp(3rem,7vw,5.5rem);
+  --pad-hero-t:clamp(1.25rem,2.5vw,2rem);
+  --pad-hero-b:clamp(2.5rem,6vw,4.5rem);
+  --pad-foot:clamp(2.5rem,5vw,3.5rem);
+  /* Must match TOP_GAP in hooks/useScrollSteps.ts. */
+  --top-gap:16px;
 }
+
+/* The content column is capped so running text keeps a readable measure, and
+   that cap is what leaves the side gutters on a wide monitor — it is the normal
+   way to lay a page out, not a bug. It only starts to read as emptiness past
+   about 1600px, so let the column grow in two steps up there. Laptops and
+   1440-wide screens are deliberately untouched.
+
+   Prose does not get longer lines from this: .prose and .sec-head carry their
+   own ch caps. What gains is the grid content — one more column of cards,
+   posts and acknowledgements. */
+@media (min-width:100rem){:root{--wrap:80rem}}
+@media (min-width:130rem){:root{--wrap:88rem}}
 
 *{box-sizing:border-box}
 
@@ -49,8 +70,72 @@ h3{font-weight:700;font-size:1.125rem;line-height:1.3;letter-spacing:-.01em}
 p{margin:0}
 
 .wrap{max-width:var(--wrap);margin:0 auto;padding-inline:clamp(1rem,4vw,2rem)}
-section{padding-block:clamp(3rem,7vw,5.5rem)}
+/* width, not auto: the step sizing below makes the sections grid containers, and
+   a grid item with auto inline margins shrink-wraps its content instead of
+   stretching. The sections holding a repeat(auto-fill,...) grid have a narrow
+   max-content, so .wrap collapsed to it — Recognition to 537px in a 2560px
+   window. An explicit 100% keeps max-width in charge and the auto margins
+   centring, in block and grid context alike. */
+.wrap{width:100%}
+section{padding-block:var(--pad-sec)}
 .alt{background:var(--surface);border-block:1px solid var(--line)}
+
+/* ---------------- step sizing ----------------
+   A step is where one wheel notch lands, so it has to own the screen it lands
+   on. Sections are content-sized by default, which is why the same page reads
+   as one clean section on a 1080p laptop and as a section plus a strip of the
+   next one on a taller monitor: the content simply runs out before the fold.
+
+   The floor below is not 100svh. useScrollSteps parks a step's CONTENT box at
+   --top-gap under the nav, scrolling the step's own top padding out of view, so
+   a step must be that much taller than the screen to still reach the fold:
+
+       height = viewport - nav - top-gap + own-top-padding
+
+   The hero is the exception: it is the first step and is pinned to scroll 0, so
+   nothing of it is scrolled away and it needs exactly the screen below the nav.
+
+   Steps with more content than the floor simply grow past it and the wheel
+   handler pages through them exactly as before. */
+.hero,
+main > section[data-step],
+.foot{
+  display:grid;
+  /* Explicit single column, not an implicit one: an auto track sizes itself to
+     the item's max-content, and the sections whose content is a
+     repeat(auto-fill,...) grid report a max-content far narrower than the
+     screen — Recognition collapsed to 537px of a 2560px window. minmax(0,1fr)
+     pins the column to the container and keeps the .wrap max-width in charge. */
+  grid-template-columns:minmax(0,1fr);
+  align-content:center;
+  align-content:safe center; /* overflowing content stays reachable at the top */
+}
+.hero{min-height:calc(100vh - var(--nav-h))}
+main > section[data-step]{min-height:calc(100vh - var(--nav-h) - var(--top-gap) + var(--pad-sec))}
+.foot{min-height:calc(100vh - var(--nav-h) - var(--top-gap) + var(--pad-foot))}
+
+/* Experience is the one section stepped role by role rather than as a whole, so
+   its LAST role is a landing place with nothing under it but the section's
+   bottom padding — on a tall screen Recognition shows through beneath it. Give
+   that role the shortfall so the fold stays inside Experience; every earlier
+   role already has the remaining roles below it to cover the screen.
+
+   Wheel/keyboard stepping only, hence the pointer query: touch scrolling never
+   lands here, so on a phone this would be dead space bought for nothing. */
+@media (hover:hover) and (pointer:fine){
+  .roles > .role:last-child{min-height:calc(100vh - var(--nav-h) - var(--top-gap) - var(--pad-sec))}
+}
+
+@supports (height:100svh){
+  /* svh, not dvh: sized against the tallest browser chrome, so a mobile URL bar
+     sliding away can never push the next section into view. */
+  .hero{min-height:calc(100svh - var(--nav-h))}
+  main > section[data-step]{min-height:calc(100svh - var(--nav-h) - var(--top-gap) + var(--pad-sec))}
+  .foot{min-height:calc(100svh - var(--nav-h) - var(--top-gap) + var(--pad-foot))}
+  @media (hover:hover) and (pointer:fine){
+    .roles > .role:last-child{min-height:calc(100svh - var(--nav-h) - var(--top-gap) - var(--pad-sec))}
+  }
+}
 
 .label{
   font-family:var(--f-mono);font-size:.6875rem;font-weight:500;
@@ -87,7 +172,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 /* ---------------- hero ---------------- */
 /* Asymmetric on purpose: the hero sits directly under the sticky nav, so a full
    section-sized top pad reads as a gap rather than as breathing room. */
-.hero{padding-block:clamp(1.25rem,2.5vw,2rem) clamp(2.5rem,6vw,4.5rem)}
+.hero{padding-block:var(--pad-hero-t) var(--pad-hero-b)}
 .hero__grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(1.5rem,5vw,4rem);align-items:center}
 @media (max-width:56rem){.hero__grid{grid-template-columns:minmax(0,1fr);gap:2.25rem}.hero__photo{order:-1}}
 
@@ -307,7 +392,7 @@ a.ack:hover{border-color:var(--accent);transform:translateY(-2px)}
 .feed-fallback a{color:var(--accent);font-weight:600}
 
 /* ---------------- footer ---------------- */
-.foot{background:var(--surface);border-top:1px solid var(--line);padding-block:clamp(2.5rem,5vw,3.5rem)}
+.foot{background:var(--surface);border-top:1px solid var(--line);padding-block:var(--pad-foot)}
 .foot__in{display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start}
 .foot h2{margin-bottom:.6rem}
 .foot p{color:var(--ink-2);max-width:40ch;margin-bottom:1.1rem}
